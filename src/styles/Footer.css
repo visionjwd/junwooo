@@ -1,0 +1,25 @@
+.footer {
+    width: 100%;
+    background: #0a081d;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.socialMedia svg {
+    color: white;
+    margin: 5px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+
+.footer p {
+    color: white;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+}

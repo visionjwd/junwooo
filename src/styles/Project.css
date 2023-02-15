@@ -1,0 +1,139 @@
+.projects{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Wire One', sans-serif;
+    transform: none;
+}
+.Title{
+    font-size: 40px;
+    margin-left: 6%;
+}
+.itemss{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+.projectcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 800px;
+    margin-bottom: 50px;
+    transition: all 0.4s;
+    
+}
+.descriptionbox li:nth-of-type(2n){
+    margin-left: 37vw;
+    opacity: 0;
+    animation: fade-in 2s forwards, slide-in-right 2s forwards;
+}
+.descriptionbox li:nth-of-type(2n-1){
+    opacity: 0;
+    animation: fade-in 2s forwards, slide-in-left 2s forwards;
+}
+.wrap{
+    padding: 0;  
+    margin: 0;      
+}
+.text_info{
+}
+.contentImage{
+    width:100%;
+    margin-left: 0;
+    padding: 3px;
+    background-color: white;
+    transition: all 0.4s;
+}
+.contentImage:hover{
+    width: 850px;
+}
+.ContentTitle{
+    font-size: 50px;
+    margin: 0px;
+    padding-top: 15px;
+}
+.description{
+    font-size: 28px;
+    
+}
+.Link_to{
+    font-size: 20px;
+    font-family: Staatliches, sans-serif;
+    font-decoration: none;  
+}
+.Link_to:hover{
+    cursor: pointer;
+    transform: none;
+}
+@media only screen and (max-width: 1250px){
+    .projectcontainer{
+        width: 500px;
+        margin-bottom: 50px;
+    }
+    .contentImage:hover{
+        width: 540px;
+    }
+}
+@media only screen and (max-width: 650px){
+    .Title{
+        font-size: 30px;
+        margin-left: 6%;
+    }
+    .itemss{
+        margin-left: 1%;
+    }
+    .projectcontainer{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin-bottom: 50px;
+    }
+    .ContentTitle{
+        font-size: 30px;
+        margin: 0px;
+    }
+    .description{
+        font-size: 20px;
+    }
+    .descriptionbox li:nth-of-type(2n){
+        margin-left: 7%;
+    }
+    .contentImage:hover{
+        width: 420px;
+    }
+}
+
+@keyframes fade-in {
+    100%{
+      opacity:1;
+    }
+  }
+  @keyframes slide-in-left {
+    0%{
+      transform: translateX(-60vh);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slide-in-right {
+    0%{
+      transform: translateX(60vh);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes fall{
+    100%{
+      transform: translateY(0);
+    }
+  }
+

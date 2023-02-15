@@ -1,0 +1,165 @@
+.home {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Wire One', sans-serif;
+    padding-bottom: 0;
+    opacity:0.2;
+    animation: fade-in 6000ms forwards;
+
+  }
+  .headerContainer {
+    width: auto;
+    margin-left: 6%;
+    opacity:0;
+    animation: fade-in 900ms forwards;
+    transition: all 0.3s;
+  }
+  
+  .Name{
+    padding-bottom: 25px;
+    font-weight:600;
+    height: 30px;
+  }
+  .Name span{
+    display: inline-flex;
+    font-weight: 500;
+    color:#E1FFEF;
+    font-size: 100px;
+    transform: translateY(-40vh);
+    opacity:0;
+    animation: fall 1.5s forwards, fade-in 2s forwards;
+    transition: all 0.3s;
+  }
+
+  .Name span:nth-child(9){
+    -webkit-animation-delay: 200ms, 300ms;
+  }
+  .Name span:nth-child(7){
+    -webkit-animation-delay: 400ms, 400ms;
+  }
+  .Name span:nth-child(6){
+    -webkit-animation-delay: 500ms, 500ms;
+  }
+  .Name span:nth-child(5){
+    -webkit-animation-delay: 600ms, 600ms;
+  }
+  .Name span:nth-child(3){
+    -webkit-animation-delay: 700ms, 700ms;
+  }
+  .Name span:nth-child(2){
+    -webkit-animation-delay: 800ms, 800ms;
+  }
+  .Name span:nth-child(1){
+    -webkit-animation-delay: 900ms, 900ms;
+  }
+
+  .headerContainer p {
+    padding: 0;
+    font-size: 40px;
+    font-weight:400;
+    color: #FFF7B4 ;
+    animation: slide-in 2300ms forwards;
+  }
+  
+  .headerContainer button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #242424;
+    border: 2px solid white;
+    height: 45px;
+    width: 170px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Staatliches', bold;
+    transition: all 0.3s;
+    animation: fade-in 1000ms forwards;
+  }
+  
+  .headerContainer button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color:#FFF;
+    color: black;
+  }
+
+
+  @media only screen and (max-width: 650px) {
+    .home {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .headerContainer h1,
+    .headerContainer p {
+    }
+  
+    .headerContainer {
+      margin-left: 30px;
+      border-radius: 10px;
+      padding: 10px;
+      width: 80%;
+      display: flex;
+      justify-contents: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+    }
+
+    .headerContainer h1 {
+      font-size: 40px;
+      height: 30px;
+      color: white;
+    }
+  
+    .headerContainer p {
+      padding-top: 20px;
+      font-size: 30px;
+    }
+  
+    .headerContainer button {
+      margin-bottom: 30px;
+    }
+  
+    .headerContainer button:hover {
+      background-color: rgb(225, 225, 225);
+      color: #121619;
+    }
+  }
+
+  @keyframes fade-in {
+      
+    100%{
+      opacity:1;
+    }
+  }
+  @keyframes slide-in {
+    0%{
+      transform: translateX(-60vh);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes fall{
+    100%{
+      transform: translateY(0);
+    }
+  }
+ 
+
+ 
+  

@@ -1,0 +1,72 @@
+.contact{
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Wire One', sans-serif;
+    color: white;
+}
+.textbox{
+    padding-right: 20%;
+    padding-left: 6%;
+}
+.textbox h1{
+    font-size: 70px;
+    margin-bottom: 0;
+}
+.textbox p{
+    font-size: 30px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding-right: 10%;
+}
+.links a {
+    padding: 10px;
+    width:140px;
+    background-color: var(--primary);
+    color: #242424;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 35px;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+a:hover{
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 650px){
+    .contact{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Wire One', sans-serif;
+        color: white;
+    }
+    .textbox{
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 40px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links{
+        padding-right: 0;
+    }
+}
+
